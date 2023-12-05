@@ -4,13 +4,13 @@ import ParticlesComponent from "./particle-component/particle";
 
 const HeroPage = () => {
     return (
-        <div className="w-screen h-screen flex justify-center items-center gradient-bg">
+        <div className="w-screen h-[600px] flex justify-center items-center gradient-bg">
             <ParticlesComponent id="tsparticles"/>
             <div className=" text-5xl text-center absolute">
-                <h1 className="">
-                    HEY THERE, I’M
+                <h1 className="tourney">
+                    HEY THERE, IM
                 </h1>
-                <h1 className="font-bold">
+                <h1 className="font-black tourney">
                     RIZKY SYAHPUTRA
                 </h1>
                 <p className="text-lg pt-3">
