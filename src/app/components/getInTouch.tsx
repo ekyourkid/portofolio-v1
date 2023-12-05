@@ -17,7 +17,7 @@ const GetInTouch = () => {
                 <div className="basis-1/2 pt-3 space-y-12">
                     <section>
                     <h1 className="saira text-2xl font-semibold">Lets Connect</h1>
-                    <p className="saira text-base font-light w-5/6">Im currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                    <p className="saira text-base font-light w-5/6">Im currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, Ill try my best to get back to you!</p>
                     </section>
                     
                     <section className="flex space-x-3 py-5">
