@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const GetInTouch = () => {
     return (
@@ -19,15 +20,14 @@ const GetInTouch = () => {
                     <p className="saira text-base font-light w-5/6">Im currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
                     </section>
                     
-                    <section className="flex space-x-3">
+                    <section className="flex space-x-3 py-5">
                         <Image src={"/images/git-logo.png"} alt="" width={48} height={48} />
                         <Image src={"/images/link-logo.png"} alt="" width={48} height={48} />
                     </section>
                     
-                    <button>
-                        <h1 className="saira">Download my <span className="font-semibold">resume</span></h1>
-                        <hr />
-                    </button>
+                    <Link href={"/assets/cv.pdf"} target="_blank" download className="w-20 overflow-hidden mt-10 bg-red-100">
+                        <h1 className="saira">Download my <span className="font-semibold underline py-10">resume</span></h1>
+                    </Link>
                 </div>
                 <div className="basis-1/2">
                     <div className="flex flex-col items-end space-y-3">

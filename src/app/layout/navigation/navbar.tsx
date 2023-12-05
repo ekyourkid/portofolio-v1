@@ -1,21 +1,58 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import useModalDisclosure from "@/app/helpers/hooks/useModalDisclosure";
+import DrawerComponent from "./drawer";
+import Link from "next/link";
 
 const Navbar = () => {
+    const { isOpen, open, close } = useModalDisclosure();
+
+    const [currentSection, setCurrentSection] = useState<string>("/");
+    console.log(currentSection, isOpen);
+
+    // #ini untuk handle click outside (diluar wrapper drawer) biar ke close nge
+    const handleClickOutside = (event: MouseEvent) => {
+        const target = event.target as HTMLElement;
+        if (!target.closest("#drawer-navigation")) {
+            close();
+        }
+    };
+    useEffect(() => {
+        document.addEventListener("click", handleClickOutside, true);
+        return () => {
+            document.removeEventListener("click", handleClickOutside, true);
+        };
+    }, []);
+
     return (
-        <div className="flex flex-row p-16">
+        <header className="flex flex-row p-16">
+            <DrawerComponent
+                isOpen={isOpen}
+                close={close}
+                active={""}
+                setCurrentSection={setCurrentSection}
+            />
             <div className="basis-11/12 ">
-                <h1 className="tourney text-4xl">#<span className="font-black">8</span>KY</h1>
+                <h1 className="w-min tourney text-4xl cursor-pointer hover:text-purple-400 :">
+                    #<span className="font-black">8</span>KY
+                </h1>
             </div>
-            <div className="basis-60 flex justify-around">
-                <button className="saira uppercase text-xl hover:text-gray-400">_resume</button>
-                <Image src={'/images/drawer.svg'} alt="drawer-logo" width={55} height={55}/>
-
+            <div className="basis-60 flex items-center justify-around">
+                <Link href={"/assets/cv.pdf"} target="_blank" className="saira uppercase text-xl hover:text-purple-400 ">
+                    _resume
+                </Link>
+                <Image
+                    src={"/images/drawer.svg"}
+                    alt="drawer-logo"
+                    width={55}
+                    height={55}
+                    onClick={() => open()}
+                    className="cursor-pointer hover:w-14"
+                />
             </div>
+        </header>
+    );
+};
 
-
-        </div>
-    )
-}
-
-export default Navbar
+export default Navbar;
