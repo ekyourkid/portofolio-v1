@@ -24,7 +24,7 @@ const Projects = () => {
         },
     ];
     return (
-        <div className=" relative w-full space-y-5" >
+        <div className=" relative w-full space-y-5">
             <Image
                 src={"/assets/shape-box.svg"}
                 alt=""
@@ -57,8 +57,12 @@ const Projects = () => {
                             />
                         </div>
                         <div className=" w-full h-20 px-7">
-                            <h1 className="saira text-lg font-semibold">{input.title}</h1>
-                            <p className="saira text-sm font-light">{input.label}</p>
+                            <h1 className="saira text-lg font-semibold">
+                                {input.title}
+                            </h1>
+                            <p className="saira text-sm font-light">
+                                {input.label}
+                            </p>
                         </div>
                     </GlassmorpWarpper>
                 ))}

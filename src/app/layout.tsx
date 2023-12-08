@@ -3,6 +3,7 @@ import { Saira, Tourney } from "next/font/google";
 import "./globals.css";
 import Footer from "./layout/footer/footer";
 import Navbar from "./layout/navigation/navbar";
+import { TailwindIndicator } from "./utils/breakpoint-indicator";
 
 const saira = Saira({
     subsets: ["latin"],
@@ -24,6 +25,7 @@ export default function RootLayout({
         <html lang="en">
             <body className={`${saira.variable} ${tourney.variable}`}>
                 <Navbar />
+                <TailwindIndicator />
                 {children}
             </body>
             <Footer />

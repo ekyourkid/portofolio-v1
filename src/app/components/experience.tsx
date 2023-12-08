@@ -11,7 +11,7 @@ const Experience = () => {
             company: "PT Feedloop Global Teknologi",
             since: "2022 - 2023",
             label:
-                "Im adept at utilizing technologies like ReactJS, VueJS, and other modern frameworks to ensure seamless user experiences. Collaborating effectively with teams to integrate designs with necessary functionalities is one of my strengths.",
+            "Im adept at utilizing technologies like ReactJS, VueJS, and other modern frameworks to ensure seamless user experiences. Collaborating effectively with teams to integrate designs with necessary functionalities is one of my strengths.",
         },
         {
             id: 1,
@@ -20,7 +20,7 @@ const Experience = () => {
             company: "PT Feedloop Global Teknologi",
             since: "2022 - 2023",
             label:
-                "Im adept at utilizing technologies like ReactJS, VueJS, and other modern frameworks to ensure seamless user experiences. Collaborating effectively with teams to integrate designs with necessary functionalities is one of my strengths.",
+            "Im adept at utilizing technologies like ReactJS, VueJS, and other modern frameworks to ensure seamless user experiences. Collaborating effectively with teams to integrate designs with necessary functionalities is one of my strengths.",
         },
     ];
     return (
@@ -31,12 +31,12 @@ const Experience = () => {
                         e<span>x</span>perience
                     </h1>
                 </section>
-              <hr className="h-[2px]" />
+                <hr className="h-[2px]" />
             </div>
             {LIST.map((input, index) => (
                 <GlassmorpWarpper
-                    key={index}
-                    className="w-full h-72 flex flex-row pt-7"
+                key={index}
+                className="w-full h-72 flex flex-row pt-7"
                 >
                     <div className="basis-32 flex flex-col items-center justify-start pt-1">
                         <Image
@@ -45,7 +45,7 @@ const Experience = () => {
                             width={60}
                             height={53}
                             className=""
-                        />
+                            />
                     </div>
                     <div className="basis-5/6 flex flex-col space-y-12">
                         <div>
