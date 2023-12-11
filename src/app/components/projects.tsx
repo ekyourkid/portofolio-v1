@@ -22,9 +22,15 @@ const Projects = () => {
             label: "PT Feedloop Global Teknologi",
             imageSrc: "/images/project.jpg",
         },
+        {
+            id: 0,
+            title: "PROJECT X",
+            label: "PT Feedloop Global Teknologi",
+            imageSrc: "/images/project.jpg",
+        },
     ];
     return (
-        <div className=" relative w-full space-y-5">
+        <div className="relative xs:w-72 sm:w-5/6 lg:w-9/12 xl:w-11/12 space-y-5">
             <Image
                 src={"/assets/shape-box.svg"}
                 alt=""
@@ -41,7 +47,8 @@ const Projects = () => {
                 <hr className="h-[2px]" />
             </div>
 
-            <div className="flex justify-around space-x-5">
+            {/* Media Screen For LG - XL */}
+            <div className="hidden lg:flex justify-around space-x-5">
                 {LIST.map((input, index) => (
                     <GlassmorpWarpper
                         key={index}
@@ -53,10 +60,38 @@ const Projects = () => {
                                 alt=""
                                 height={300}
                                 width={300}
-                                className="object-contain  w-full h-56 bg-white object-cover"
+                                className="w-full h-56 bg-white object-cover"
                             />
                         </div>
                         <div className=" w-full h-20 px-7">
+                            <h1 className="saira text-lg font-semibold">
+                                {input.title}
+                            </h1>
+                            <p className="saira text-sm font-light">
+                                {input.label}
+                            </p>
+                        </div>
+                    </GlassmorpWarpper>
+                ))}
+            </div>
+
+            {/* Media Screen For XS - MD */}
+            <div className="xs:flex flex-col justify-around space-y-5 lg:hidden ">
+                {LIST.map((input, index) => (
+                    <GlassmorpWarpper
+                        key={index}
+                        className="flex flex-col justify-center w-full h-auto overflow-hidden border-solid border-2 border-white rounded-3xl"
+                    >
+                        <div className="flex justify-center items-start w-full h-5/6">
+                            <Image
+                                src={input.imageSrc}
+                                alt=""
+                                height={300}
+                                width={300}
+                                className="w-full h-56 bg-white object-cover"
+                            />
+                        </div>
+                        <div className=" w-full h-20 px-7 pt-3">
                             <h1 className="saira text-lg font-semibold">
                                 {input.title}
                             </h1>

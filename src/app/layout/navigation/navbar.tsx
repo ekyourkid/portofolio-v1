@@ -60,7 +60,7 @@ const Navbar = () => {
             </div>
 
             {/* Media Screen For XS - MD */}
-            <div className="lg:hidden flex sm:p-5 sm:px-7 md:px-7 ">
+            <div className="lg:hidden flex p-3 xs:px-3 sm:px-5 md:px-10 ">
                 <DrawerComponent
                     isOpen={isOpen}
                     close={close}
@@ -68,22 +68,22 @@ const Navbar = () => {
                     setCurrentSection={setCurrentSection}
                 />
                 <div className="basis-11/12 flex items-center ">
-                    <h1 className="w-min tourney text-4xl cursor-pointer hover:text-purple-400 :">
+                    <h1 className="w-min tourney text-2xl cursor-pointer hover:text-purple-400 :">
                         #<span className="font-black">8</span>KY
                     </h1>
                 </div>
-                <div className="basis-60 flex items-center justify-around ">
+                <div className="basis-60 flex items-center justify-end space-x-3 ">
                     <Link
                         href={"/assets/cv.pdf"}
                         target="_blank"
-                        className="saira uppercase text-xl hover:text-purple-400 "
+                        className="saira uppercase text-base hover:text-purple-400 "
                     >
                         _resume
                     </Link>
                     <Image
                         src={"/images/drawer.svg"}
                         alt="drawer-logo"
-                        width={55}
+                        width={35}
                         height={55}
                         onClick={() => open()}
                         className="cursor-pointer hover:w-14"
