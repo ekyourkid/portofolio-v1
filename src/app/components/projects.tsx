@@ -12,20 +12,20 @@ const Projects = () => {
         },
         {
             id: 1,
-            title: "Barber App",
+            title: "Booking App",
             label: "PT Feedloop Global Teknologi",
-            imageSrc: "/images/qore.jpeg",
+            imageSrc: "/images/barber.jpg",
         },
         {
             id: 2,
             title: "Asset Management",
             label: "PT Feedloop Global Teknologi",
-            imageSrc: "/images/qore.jpeg",
+            imageSrc: "/images/asset.jpg",
         },
         {
             id: 3,
             title: "Plagams Store",
-            label: "PT Feedloop Global Teknologi",
+            label: "Freelance",
             imageSrc: "/images/plg.jpeg",
         },
     ];

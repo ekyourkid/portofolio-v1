@@ -8,7 +8,7 @@ const Experience = () => {
     const LIST = [
         {
             id: 0,
-            img: "/images/fl-logo.png",
+            img: "/images/fl.jpg",
             title: "Intern Frontend Engineer",
             company: "PT Feedloop Global Teknologi",
             since: "2022 - 2023",
@@ -18,7 +18,7 @@ const Experience = () => {
         },
         {
             id: 1,
-            img: "/images/fl-logo.png",
+            img: "/images/freelance.jpg",
             title: "Freelance Frontend Engineer",
             company: "Freelance",
             since: "2022 - 2023",
@@ -50,7 +50,7 @@ const Experience = () => {
                             alt="feedloop logo"
                             width={80}
                             height={53}
-                            className=""
+                            className="rounded w-auto"
                         />
                     </div>
                     <div className="basis-5/6 flex flex-col space-y-8">
