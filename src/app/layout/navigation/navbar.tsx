@@ -42,7 +42,7 @@ const Navbar = () => {
                 </div>
                 <div className="basis-60 flex items-center justify-around">
                     <Link
-                        href={"/assets/cv.pdf"}
+                        href={"/assets/cv-eky.pdf"}
                         target="_blank"
                         className="saira uppercase text-xl hover:text-purple-400 "
                     >

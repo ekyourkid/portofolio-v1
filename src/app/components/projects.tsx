@@ -30,7 +30,7 @@ const Projects = () => {
         },
     ];
     return (
-        <div className="relative xs:w-72 sm:w-5/6 lg:w-9/12 xl:w-11/12 space-y-5">
+        <div className="relative w-full space-y-5">
             <Image
                 src={"/assets/shape-box.svg"}
                 alt=""

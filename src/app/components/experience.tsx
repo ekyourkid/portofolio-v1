@@ -24,7 +24,7 @@ const Experience = () => {
         },
     ];
     return (
-        <div className="space-y-5 xs:w-72 sm:w-5/6 lg:w-8/12 xl:w-9/12">
+        <div className="space-y-5 w-full">
             <div className="flex justify-start items-center space-x-1 ">
                 <section>
                     <h1 className="tourney uppercase italic text-4xl">

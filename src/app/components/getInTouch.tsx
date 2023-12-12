@@ -4,9 +4,9 @@ import Link from "next/link";
 
 const GetInTouch = () => {
     return (
-        <div>
+        <div className="w-full">
             {/* Media Screen For LG - XL */}
-            <div className="pt-14 space-y-5 hidden lg:flex flex-col bg-red-300">
+            <div className="pt-14 space-y-5 hidden lg:flex flex-col">
                 <div className=" flex justify-start items-center space-x-5">
                     <section className=" w-72 h-9">
                         <h1 className="tourney uppercase italic text-4xl">
@@ -45,7 +45,7 @@ const GetInTouch = () => {
                         </section>
 
                         <Link
-                            href={"/assets/cv.pdf"}
+                            href={"/assets/cv-eky.pdf"}
                             target="_blank"
                             download
                             className="w-20 overflow-hidden mt-10 bg-red-100"
@@ -86,7 +86,7 @@ const GetInTouch = () => {
             </div>
 
             {/* Media Screen For XS - MD */}
-            <div className="lg:hidden pt-14 space-y-5 flex flex-col xs:w-72 sm:w-5/6 lg:w-8/12 xl:w-9/12">
+            <div className="lg:hidden pt-14 space-y-5 flex flex-col">
                 <div className="flex justify-start items-center space-x-5">
                     <section className=" w-72 h-9">
                         <h1 className="tourney uppercase italic text-3xl">
@@ -96,12 +96,12 @@ const GetInTouch = () => {
                     <hr className="h-[2px]" />
                 </div>
                 <div className="flex flex-col">
-                    <div className="w-full space-y-5">
+                    <div className="w-full space-y-5 ">
                         <section className="">
-                            <h1 className="saira text-xl font-semibold">
+                            <h1 className="saira text-xl sm:text-2xl font-semibold">
                                 Lets Connect
                             </h1>
-                            <p className="saira text-sm font-light w-5/6">
+                            <p className="saira text-sm sm:text-base font-light w-5/6">
                                 Im currently looking for new opportunities, my
                                 inbox is always open. Whether you have a
                                 question or just want to say hi, Ill try my best
@@ -139,23 +139,23 @@ const GetInTouch = () => {
                         </Link>
                     </div>
                     <div className="w-full pt-10">
-                        <div className="flex flex-col items-end space-y-3">
+                        <div className="flex flex-col items-end sm:items-center space-y-3">
                             <input
                                 type="text"
                                 placeholder="Email"
-                                className="w-72 p-2 h-10 rounded-xl saira bg-gray-500"
+                                className="w-72 sm:w-full p-2 h-10 rounded-xl saira bg-gray-500"
                             />
                             <input
                                 type="text"
                                 placeholder="Subject"
-                                className="w-72 p-2 h-10 rounded-xl saira bg-gray-500"
+                                className="w-72 sm:w-full p-2 h-10 rounded-xl saira bg-gray-500"
                             />
                             <textarea
                                 placeholder="Message..."
                                 name="postContent"
                                 rows={5}
                                 cols={29}
-                                className="p-2 h-32 rounded-xl saira bg-gray-500"
+                                className="sm:w-full p-2 h-32 rounded-xl saira bg-gray-500"
                             />
                             <button className="w-28 h-9 bg-gradient-to-br saira from-purple-600 rounded">
                                 send

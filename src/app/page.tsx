@@ -39,7 +39,7 @@ export default function Home() {
                     height={600}
                     className="absolute right-0 bottom-20 z-0"
                 />
-                <div className="flex flex-col items-center space-y-24 z-10">
+                <div className="flex flex-col items-center space-y-24 z-10 xs:w-72 sm:w-5/6 lg:w-8/12">
                     <TechSection />
                     <Projects />
                     <Experience />

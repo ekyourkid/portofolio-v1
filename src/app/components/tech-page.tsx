@@ -3,7 +3,7 @@ import GlassmorpWarpper from "./glassmorp-warper";
 
 const TechSection = () => {
     return (
-        <div className="xs:w-72 sm:w-5/6 lg:w-9/12 xl:w-11/12 flex flex-col items-center space-y-5">
+        <div className="w-full flex flex-col items-center space-y-5">
             {/* Media Screen For LG - XL */}
             <GlassmorpWarpper className="h-80 w-full xs:p-8 lg:p-12 lg:h-96">
                 <p className="xs:text-xs md:text-lg lg:text-xl xl:text-2xl font-normal">
