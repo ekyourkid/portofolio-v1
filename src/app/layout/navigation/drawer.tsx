@@ -17,15 +17,12 @@ const DrawerComponent: React.FC<IPropsDrawer> = ({
     close,
     active,
     setCurrentSection,
-    
 }) => {
     return (
         <div
             id="drawer-navigation"
-            className={`z-[101] fixed top-0 right-0 h-screen p-4 overflow-y-auto transition-transform bg-slate-600 w-96
-            ${
-                isOpen ? "" : "translate-x-full"
-            } `}
+            className={`z-[101] fixed top-0 right-0 h-screen p-4 overflow-y-auto transition-transform bg-black w-96
+            ${isOpen ? "" : "translate-x-full"} `}
             tabIndex={-1}
             aria-labelledby="drawer-navigation-label"
         >
@@ -60,21 +57,25 @@ const DrawerComponent: React.FC<IPropsDrawer> = ({
                             <Link
                                 href={menu.ref}
                                 onClick={() => {
-                                    //  {/* disini dipanggil di event onClick props func close() untuk membuka drawer */}
-                                    setCurrentSection(menu.ref);
                                     close();
+                                    setCurrentSection(menu.ref);
                                 }}
                                 className="flex text-center items-center p-2 rounded-lg group"
                             >
-                                <span
-                                    className={`w-full font-semibold text-lg text-center cursor-pointer hover:text-delima-primary ${
-                                        active === menu.ref
-                                            ? "text-delima-primary"
-                                            : "text-delima-text-dark"
-                                    }`}
+                                <h2
+                                    className="hero glitch layers uppercase pl-7"
+                                    data-text="jimbo asix"
                                 >
-                                    {menu.title}
-                                </span>
+                                    <span
+                                        className={`w-full font-semibold text-lg text-center cursor-pointer hover:text-delima-primary ${
+                                            active === menu.ref
+                                                ? "text-delima-primary"
+                                                : "text-delima-text-dark"
+                                        }`}
+                                    >
+                                        {menu.title}
+                                    </span>
+                                </h2>
                             </Link>
                         </li>
                     ))}

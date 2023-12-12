@@ -3,10 +3,9 @@ import GlassmorpWarpper from "./glassmorp-warper";
 
 const TechSection = () => {
     return (
-        <div className="w-full flex flex-col items-center space-y-5">
-            {/* Media Screen For LG - XL */}
-            <GlassmorpWarpper className="h-80 w-full xs:p-8 lg:p-12 lg:h-96">
-                <p className="xs:text-xs md:text-lg lg:text-xl xl:text-2xl font-normal">
+        <div className="w-full  flex flex-col items-center space-y-5">
+            <GlassmorpWarpper className="h-auto w-full xs:p-5 lg:p-12">
+                <p className="xs:text-xs md:text-lg lg:text-xl xl:text-lg font-normal">
                     Hi there! Im Rizky Syahputra, a frontend web developer
                     passionate about crafting visually appealing and
                     user-friendly interfaces. With expertise in HTML, CSS, and
@@ -18,9 +17,6 @@ const TechSection = () => {
                     with necessary functionalities is one of my strengths.
                     <br /> <br /> Rizky Syahputra
                 </p>
-            </GlassmorpWarpper>
-            <GlassmorpWarpper className=" h-20 flex flex-row w-full overflow-hidden">
-                <div></div>
             </GlassmorpWarpper>
         </div>
     );

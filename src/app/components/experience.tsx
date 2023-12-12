@@ -1,6 +1,8 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import GlassmorpWarpper from "./glassmorp-warper";
+import { Tabs, Tab } from "@nextui-org/react";
 
 const Experience = () => {
     const LIST = [
@@ -10,21 +12,23 @@ const Experience = () => {
             title: "Intern Frontend Engineer",
             company: "PT Feedloop Global Teknologi",
             since: "2022 - 2023",
-            label:
-                "Im adept at utilizing technologies like ReactJS, VueJS, and other modern frameworks to ensure seamless user experiences. Collaborating effectively with teams to integrate designs with necessary functionalities is one of my strengths.",
+            overview:
+                "Asigned as intern engineer on projects Asset Management and Barber Aplication ",
+            responsibility: `<ul><li>Create responsive desktop and mobile interfaces</li><li>Creating application functions</li><li>fetching application data</li><li>Create a project workflow</li><li>Custom component functions</li></ul>`,
         },
         {
             id: 1,
             img: "/images/fl-logo.png",
-            title: "Intern Frontend Engineer",
-            company: "PT Feedloop Global Teknologi",
+            title: "Freelance Frontend Engineer",
+            company: "Freelance",
             since: "2022 - 2023",
-            label:
-                "Im adept at utilizing technologies like ReactJS, VueJS, and other modern frameworks to ensure seamless user experiences. Collaborating effectively with teams to integrate designs with necessary functionalities is one of my strengths.",
+            overview:
+                "Developing projects Plagams Store (Online Store) and Tricora (Organization Official Website) using NextJs.",
+            responsibility: `<ul><li>Creating reusable components</li><li>Slicing page and layout</li><li>Routing between page</li><li>Data fetching from server</li><li>&nbsp;Maintaining and bug fixing aplication</li></ul>`,
         },
     ];
     return (
-        <div className="space-y-5 w-full">
+        <div id="Experience" className="space-y-5 w-full">
             <div className="flex justify-start items-center space-x-1 ">
                 <section>
                     <h1 className="tourney uppercase italic text-4xl">
@@ -38,7 +42,7 @@ const Experience = () => {
             {LIST.map((input, index) => (
                 <GlassmorpWarpper
                     key={index}
-                    className="hidden w-full lg:h-80 lg:flex flex-row pt-7 lg:p-7"
+                    className="hidden w-full lg:h-auto lg:flex flex-row pt-7 lg:p-7"
                 >
                     <div className="basis-32 flex flex-col items-center justify-start">
                         <Image
@@ -62,22 +66,27 @@ const Experience = () => {
                             </h2>
                         </div>
                         <div className="space-y-3">
-                            <section className="flex space-x-7 saira">
-                                <h1 className="saira text-lg xl:text-xl font-normal">
-                                    Responsibilities
-                                </h1>
-                                <h1 className="text-gray-500 saira text-lg xl:text-xl font-normal">
-                                    Acheivement
-                                </h1>
-                            </section>
-                            <section>
-                                <hr />
-                            </section>
-                            <section>
-                                <p className="saira text-base xl:text-lg font-normal">
-                                    {input.label}
-                                </p>
-                            </section>
+                            <Tabs
+                                aria-label="Options"
+                                color="primary"
+                                variant="underlined"
+                            >
+                                <Tab key="overview" title="Overview">
+                                    {input.overview}
+                                </Tab>
+                                <Tab
+                                    key="Responsibilities"
+                                    title="Responsibilities"
+                                >
+                                    <div>
+                                        <div
+                                            dangerouslySetInnerHTML={{
+                                                __html: input.responsibility,
+                                            }}
+                                        />
+                                    </div>
+                                </Tab>
+                            </Tabs>
                         </div>
                     </div>
                 </GlassmorpWarpper>
@@ -87,7 +96,7 @@ const Experience = () => {
             {LIST.map((input, index) => (
                 <GlassmorpWarpper
                     key={index}
-                    className="w-full h-72 lg:hidden xs:flex flex-row xs:p-3 md:p-7 xs:pt-3 xs:space-x-3 md:space-x-7"
+                    className="w-full h-auto lg:hidden xs:flex flex-row xs:p-3 md:p-7 xs:pt-3 xs:space-x-3 md:space-x-7"
                 >
                     <div className="xs:w-10 sm:w-20 flex flex-col items-center justify-start pt-1">
                         <Image
@@ -98,7 +107,7 @@ const Experience = () => {
                             className="xs:w-52"
                         />
                     </div>
-                    <div className="xs:w-56 sm:w-5/6 flex flex-col space-y-5">
+                    <div className="xs:w-56 sm:w-5/6 flex flex-col space-y-0 ">
                         <div>
                             <h1 className="saira xs:text-base sm:text-2xl font-semibold">
                                 {input.title}
@@ -111,22 +120,30 @@ const Experience = () => {
                             </h2>
                         </div>
                         <div className="space-y-2 xs:pt-7">
-                            <section className="flex space-x-7 xs:space-x-3 saira">
-                                <h1 className="saira xs:text-xs sm:text-base font-normal">
-                                    Responsibilities
-                                </h1>
-                                <h1 className="text-gray-500 saira xs:text-xs sm:text-base font-normal">
-                                    Acheivement
-                                </h1>
-                            </section>
-                            <section>
-                                <hr />
-                            </section>
-                            <section>
-                                <p className="saira text-base xs:text-xs sm:text-sm font-normal">
-                                    {input.label}
-                                </p>
-                            </section>
+                            <div className="space-y-3">
+                                <Tabs
+                                    aria-label="Options"
+                                    color="primary"
+                                    variant="underlined"
+                                >
+                                    <Tab key="overview" title="Overview">
+                                        {input.overview}
+                                    </Tab>
+                                    <Tab
+                                        key="Responsibilities"
+                                        title="Responsibilities"
+                                    >
+                                        <div>
+                                            <div
+                                                dangerouslySetInnerHTML={{
+                                                    __html:
+                                                        input.responsibility,
+                                                }}
+                                            />
+                                        </div>
+                                    </Tab>
+                                </Tabs>
+                            </div>
                         </div>
                     </div>
                 </GlassmorpWarpper>

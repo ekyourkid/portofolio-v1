@@ -26,7 +26,7 @@ const Navbar = () => {
     }, []);
 
     return (
-        <header className=" w-full">
+        <header className="fixed top-0 w-full z-50 glassmorph-nav">
             {/* Media Screen For LG - XL */}
             <div className=" hidden lg:flex flex-row p-5 lg:px-10 xl:px-14 ">
                 <DrawerComponent
@@ -51,10 +51,10 @@ const Navbar = () => {
                     <Image
                         src={"/images/drawer.svg"}
                         alt="drawer-logo"
-                        width={55}
+                        width={30}
                         height={55}
                         onClick={() => open()}
-                        className="cursor-pointer hover:w-14"
+                        className="cursor-pointer hover:w-8"
                     />
                 </div>
             </div>

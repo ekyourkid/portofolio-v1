@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const GetInTouch = () => {
     return (
-        <div className="w-full">
+        <div id="GetInTouch" className="w-full">
             {/* Media Screen For LG - XL */}
             <div className="pt-14 space-y-5 hidden lg:flex flex-col">
                 <div className=" flex justify-start items-center space-x-5">
@@ -57,30 +57,6 @@ const GetInTouch = () => {
                                 </span>
                             </h1>
                         </Link>
-                    </div>
-                    <div className="basis-1/2">
-                        <div className="flex flex-col items-end space-y-3">
-                            <input
-                                type="text"
-                                placeholder="Email"
-                                className="w-96 p-2 h-12 rounded-xl saira bg-gray-500"
-                            />
-                            <input
-                                type="text"
-                                placeholder="Subject"
-                                className="w-96 p-2 h-12 rounded-xl saira bg-gray-500"
-                            />
-                            <textarea
-                                placeholder="Message..."
-                                name="postContent"
-                                rows={5}
-                                cols={50}
-                                className="w-96 p-2 h-32 rounded-xl saira bg-gray-500"
-                            />
-                            <button className="w-28 h-9 bg-gradient-to-br saira from-purple-600 rounded">
-                                send
-                            </button>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -137,30 +113,6 @@ const GetInTouch = () => {
                                 </span>
                             </h1>
                         </Link>
-                    </div>
-                    <div className="w-full pt-10">
-                        <div className="flex flex-col items-end sm:items-center space-y-3">
-                            <input
-                                type="text"
-                                placeholder="Email"
-                                className="w-72 sm:w-full p-2 h-10 rounded-xl saira bg-gray-500"
-                            />
-                            <input
-                                type="text"
-                                placeholder="Subject"
-                                className="w-72 sm:w-full p-2 h-10 rounded-xl saira bg-gray-500"
-                            />
-                            <textarea
-                                placeholder="Message..."
-                                name="postContent"
-                                rows={5}
-                                cols={29}
-                                className="sm:w-full p-2 h-32 rounded-xl saira bg-gray-500"
-                            />
-                            <button className="w-28 h-9 bg-gradient-to-br saira from-purple-600 rounded">
-                                send
-                            </button>
-                        </div>
                     </div>
                 </div>
             </div>
