@@ -14,11 +14,6 @@ const saira = Saira({
 });
 const tourney = Tourney({ subsets: ["latin"], variable: "--font-tourney" });
 
-// export const metadata: Metadata = {
-//     title: "Rizky Syahputra",
-//     description: "Personal Portofolio Rizky Syahputra",
-// };
-
 export default function RootLayout({
     children,
 }: {
@@ -48,6 +43,7 @@ export default function RootLayout({
                     href="/favicon-16x16.png"
                 />
             </head>
+
             <body
                 className={`${saira.variable} ${tourney.variable} overflow-x-hidden`}
             >

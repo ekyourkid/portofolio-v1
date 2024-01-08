@@ -9,9 +9,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-    //   fontFamily: {
-    //     "Tourney": ["Josefin Sans", ...defaultTheme.fontFamily.sans;],
-    // },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':

@@ -42,7 +42,7 @@ const Experience = () => {
             {LIST.map((input, index) => (
                 <GlassmorpWarpper
                     key={index}
-                    className="hidden w-full lg:h-auto lg:flex flex-row pt-7 lg:p-7"
+                    className="hidden w-full lg:h-auto lg:flex flex-row pt-7 lg:p-7 space-x-5"
                 >
                     <div className="basis-32 flex flex-col items-center justify-start">
                         <Image
@@ -53,7 +53,7 @@ const Experience = () => {
                             className="rounded w-auto"
                         />
                     </div>
-                    <div className="basis-5/6 flex flex-col space-y-8">
+                    <div className="basis-5/6 flex flex-col space-y-8  pt-1">
                         <div>
                             <h1 className="saira lg:text-3xl xl:text-4xl font-semibold">
                                 {input.title}
